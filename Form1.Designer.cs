@@ -335,6 +335,7 @@ namespace Calculator
             this.buttonBack.TabIndex = 19;
             this.buttonBack.Text = "<-";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonC
             // 

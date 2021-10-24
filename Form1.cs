@@ -156,5 +156,15 @@ namespace Calculator
             };
             output.Text = res.ToString();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            if(output.Text.Length==1)
+            {
+                output.Text = "0";
+                return;
+            }
+            output.Text = output.Text.Substring(0, output.Text.Length - 1);
+        }
     }
 }
